@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function cargarMenu() {
-    fetch('partials/menu.html')  // Cargar el archivo menu.html
+    fetch('../partials/menu.html')  // Cargar el archivo menu.html
         .then(response => response.text())  // Convertir la respuesta a texto
         .then(data => {
             document.getElementById('menu-container').innerHTML = data; // Insertar el contenido del menú
