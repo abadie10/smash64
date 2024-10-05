@@ -25,3 +25,8 @@ nav ul li a, nav ul li button {
 nav ul li button:hover, nav ul li a:hover {
     color: #1abc9c;
 }
+
+#menu-container {
+    border: 1px solid red; /* Solo para verificar si el contenedor es visible */
+}
+
