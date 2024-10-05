@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugadores - Estadísticas E-sport</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="jugadores.html">Jugadores</a></li>
+                <li><a href="resultados.html">Resultados de Partidas</a></li>
+                <li id="admin-menu" style="display: none;"><a href="admin.html">Administración</a></li>
+                <li><button id="login-button">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Jugadores</h1>
+        <div id="jugadores-lista">
+            <!-- Aquí se mostrará dinámicamente la lista de jugadores -->
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
