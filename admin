@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración - Estadísticas E-sport</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="jugadores.html">Jugadores</a></li>
+                <li><a href="resultados.html">Resultados de Partidas</a></li>
+                <li id="admin-menu" style="display: none;"><a href="admin.html">Administración</a></li>
+                <li><button id="login-button">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Administración</h1>
+        <section id="editar-inicio">
+            <h2>Editar Página de Inicio</h2>
+            <textarea id="inicio-texto" rows="5"></textarea>
+            <button onclick="guardarInicio()">Guardar Cambios</button>
+        </section>
+
+        <section id="editar-jugadores">
+            <h2>Editar Jugadores</h2>
+            <!-- Aquí puedes agregar y modificar jugadores -->
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
