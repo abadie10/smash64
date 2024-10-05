@@ -41,16 +41,21 @@ function login() {
 }
 
 function verificarLogin() {
-    const isLoggedIn = localStorage.getItem('loggedIn');
-    const adminMenu = document.getElementById('admin-menu');
     const loginButton = document.getElementById('login-button');
+    const adminMenu = document.getElementById('admin-menu');
 
-    if (isLoggedIn === 'true') {
-        adminMenu.style.display = 'block';
-        loginButton.textContent = 'Cerrar sesión';
+    if (loginButton && adminMenu) {
+        const isLoggedIn = localStorage.getItem('loggedIn');
+
+        if (isLoggedIn === 'true') {
+            adminMenu.style.display = 'block';
+            loginButton.textContent = 'Cerrar sesión';
+        } else {
+            adminMenu.style.display = 'none';
+            loginButton.textContent = 'Login';
+        }
     } else {
-        adminMenu.style.display = 'none';
-        loginButton.textContent = 'Login';
+        console.error('Elementos no encontrados: admin-menu o login-button');
     }
 }
 
