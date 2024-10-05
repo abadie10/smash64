@@ -4,7 +4,7 @@ window.onload = function() {
 };
 
 function cargarMenu() {
-    fetch('/partials/menu.html')
+    fetch('/smash64/partials/menu.html')
         .then(response => response.text())
         .then(data => {
             console.log("Contenedor encontrado:", document.getElementById('menu-container'));
