@@ -3,33 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estadísticas Perritas E-Sports</title>
+    <title>Estadísticas de E-sport</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="jugadores.html">Jugadores</a></li>
-                <li><a href="resultados.html">Resultados de Partidas</a></li>
-                <li id="admin-menu" style="display: none;"><a href="admin.html">Administración</a></li>
-                <li><button id="login-button">Login</button></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="login-form" style="display:none;">
-        <input type="text" id="username" placeholder="Usuario">
-        <input type="password" id="password" placeholder="Contraseña">
-        <button onclick="login()">Ingresar</button>
-    </div>
+    <!-- Contenedor donde se cargará el menú -->
+    <div id="menu-container"></div>
 
     <main>
         <h1>Bienvenidos a las Estadísticas de E-sport</h1>
-        <p>Esta página muestra estadísticas y resultados de partidas entre amigos. Toda la información es actualizable por el administrador.</p>
+        <p>Esta página muestra estadísticas y resultados de partidas entre amigos.</p>
     </main>
 
-    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
