@@ -1,0 +1,9 @@
+[
+    {
+        "jugador1": "Lucas",
+        "jugador2": "Kaiser",
+        "tipo": "1v1",
+        "ganador": "Lucas",
+        "vidas_restantes": 2
+    }
+]
