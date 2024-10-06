@@ -3,40 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultados de Partidas - Estadísticas E-sport</title>
+    <title>Jugadores</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/jugadores.js"></script>
 </head>
 <body>
-    <!-- Contenedor donde se cargará el menú -->
-    <div id="menu-container"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="jugadores.html">Jugadores</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main>
-        <h1>Resultados de Partidas</h1>
-
-        <label for="filtro">Filtrar por tipo de partida:</label>
-        <select id="filtro" onchange="filtrarResultados()">
-            <option value="todos">Todos</option>
-            <option value="1v1">1v1</option>
-            <option value="2v2">2v2</option>
-            <option value="crew-battle">Crew Battle</option>
+    <div class="content-container">
+        <h1>Jugadores</h1>
+        <label for="selector-jugador">Selecciona un jugador:</label>
+        <select id="selector-jugador">
+            <option value="">--Selecciona--</option>
         </select>
 
-        <table id="tabla-resultados">
-            <thead>
-                <tr>
-                    <th>Jugador 1</th>
-                    <th>Jugador 2</th>
-                    <th>Tipo de Partida</th>
-                    <th>Ganador</th>
-                    <th>Vidas Restantes</th>
-                </tr>
-            </thead>
-            <tbody id="resultados-lista">
-                <!-- Aquí se mostrarán dinámicamente los resultados -->
-            </tbody>
-        </table>
-    </main>
-
-    <script src="js/login.js"></script>
+        <div id="info-jugador">
+            <!-- Aquí se mostrará la información del jugador seleccionado -->
+        </div>
+    </div>
 </body>
 </html>
+
