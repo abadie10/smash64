@@ -120,11 +120,19 @@ nav ul {
     padding: 10px;
     border: 1px solid #ccc;
     font-size: 18px;
+    vertical-align: middle;  /* Asegura que el texto se alinee correctamente */
+}
+
+.imagen-celda {
+    text-align: center;
+    vertical-align: middle;  /* Centra la imagen verticalmente */
 }
 
 .personaje-img {
-    width: 150px; /* Ajusta el tamaño de la imagen según lo necesites */
+    width: 150px;
     height: auto;
     display: block;
+    margin: 0 auto;  /* Centra la imagen horizontalmente */
 }
+
 
