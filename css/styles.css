@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     min-height: 100vh;  /* Asegura que el cuerpo tenga altura suficiente */
-    background-image: url('background.png');
+    background-image: url('https://abadie10.github.io/smash64/background.png');
     background-size: cover;  /* Ajusta la imagen para cubrir el fondo */
     background-position: center;  /* Centra la imagen */
     background-repeat: no-repeat;  /* No repite la imagen */
