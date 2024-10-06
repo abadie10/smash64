@@ -64,8 +64,8 @@ nav ul li a:hover {
 }
 
 header .global-title .logo {
-    width: 50px; /* Ajusta el tamaño del logo */
-    max-width: 50px !important;
+    width: 100px; /* Ajusta el tamaño del logo */
+    max-width: 100px !important;
     height: auto;
     margin-right: 15px; /* Añade espacio entre el logo y el título */
 }
