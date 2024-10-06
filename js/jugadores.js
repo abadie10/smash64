@@ -43,16 +43,16 @@ function mostrarInfoJugador(jugadorId, datosJugadores) {
                     <td>${infoJugador.main}</td>
                 </tr>
                 <tr>
+                    <td><strong>Otros Personajes</strong></td>
+                    <td>${infoJugador.otros ? infoJugador.otros.join(', ') : 'N/A'}</td>
+                </tr>
+                <tr>
                     <td><strong>Mejores victorias</strong></td>
                     <td>${infoJugador.mejores_victorias ? infoJugador.mejores_victorias.join(', ') : 'N/A'}</td>
                 </tr>
                 <tr>
                     <td><strong>Mejor resultado</strong></td>
                     <td>${infoJugador.mejor_resultado ? infoJugador.mejor_resultado.join(', ') : 'N/A'}</td>
-                </tr>
-                <tr>
-                    <td><strong>Otros Personajes</strong></td>
-                    <td>${infoJugador.otros ? infoJugador.otros.join(', ') : 'N/A'}</td>
                 </tr>
                 <tr>
                     <td colspan="3">
