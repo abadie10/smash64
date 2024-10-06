@@ -74,3 +74,21 @@ header .global-title .logo {
 nav ul {
     margin-top: 0; /* Elimina cualquier margen extra entre la barra y el menú */
 }
+
+.tabla-jugadores {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tabla-jugadores td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    color: white;
+}
+
+.tabla-jugadores tr {
+    background-color: rgba(0, 0, 0, 0.7);
+}
