@@ -11,7 +11,7 @@
         "nombre": "Alls",
         "main": "Kirby",
         "imagen": "images/kirby.jpg",
-        "startgg": "",
+        "startgg": "https://www.start.gg/user/0f1dc875",
         "mejores_victorias": ["Chapuz"],
         "mejor_resultado": ["2to", "2do (teams)"]
     }
