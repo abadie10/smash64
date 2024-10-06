@@ -1,48 +1,54 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const selector = document.getElementById('selector-jugador');
-    const infoJugador = document.getElementById('info-jugador');
+    const jugadores = document.querySelectorAll('.tabla-jugadores td');
+    let jugadorSeleccionado = null;
 
-    // Cargar jugadores desde el archivo JSON
-    fetch('https://abadie10.github.io/smash64/jugadores.json')
-        .then(response => response.json())
-        .then(jugadores => {
-            jugadores.forEach(jugador => {
-                const option = document.createElement('option');
-                option.value = jugador.nombre;
-                option.textContent = jugador.nombre;
-                selector.appendChild(option);
-            });
+    // Jugadores con información correspondiente
+    const datosJugadores = {
+        kaiser: {
+            nombre: 'Kaiser',
+            main: 'Capitán Falcon',
+            victorias: ['Foca (4stock)', 'Marce', 'Roche'],
+            resultado: ['4to', '2do (teams)'],
+            imagen: 'https://ruta-a-la-imagen-de-capitan-falcon'
+        },
+        alls: {
+            nombre: 'Alls',
+            main: 'Kirby',
+            victorias: ['Chapuz'],
+            resultado: ['2to', '2do (teams)'],
+            imagen: 'https://ruta-a-la-imagen-de-kirby'
+        },
+        // Añade más jugadores según sea necesario...
+    };
 
-            // Mostrar datos al seleccionar un jugador
-            selector.addEventListener('change', function () {
-                const jugadorSeleccionado = jugadores.find(j => j.nombre === selector.value);
-                if (jugadorSeleccionado) {
-                    mostrarInfoJugador(jugadorSeleccionado);
-                }
-            });
+    // Agrega eventos de clic a cada celda de la tabla
+    jugadores.forEach(jugador => {
+        jugador.addEventListener('click', function () {
+            // Remover la clase del jugador previamente seleccionado
+            if (jugadorSeleccionado) {
+                jugadorSeleccionado.classList.remove('jugador-seleccionado');
+            }
+
+            // Marcar el jugador actual como seleccionado
+            jugadorSeleccionado = jugador;
+            jugadorSeleccionado.classList.add('jugador-seleccionado');
+
+            // Mostrar la información del jugador seleccionado
+            mostrarInfoJugador(jugador.id);
         });
+    });
 
     // Función para mostrar la información del jugador
-    function mostrarInfoJugador(jugador) {
-        infoJugador.innerHTML = `
-    <h2>${jugador.nombre}</h2>
-    <img src="${jugador.imagen}" alt="${jugador.main}" class="personaje-img">
-    <p><strong>Main:</strong> ${jugador.main}</p>
-    <p><strong>Mejores victorias:</strong> ${jugador.mejores_victorias.join(', ')}</p>
-    <p><strong>Mejores resultados en torneo:</strong> ${jugador.mejor_resultado.join(', ')}</p>
-    <a href="${jugador.startgg}" target="_blank">
-        <img src="https://abadie10.github.io/smash64/images/startgg.png" alt="Start.gg" width="30px">
-    </a>
-`;
-        if (jugador.startgg) {
-            cargarResultadosStartGG(jugador.startgg);
+    function mostrarInfoJugador(jugadorId) {
+        const infoJugador = datosJugadores[jugadorId];
+        if (infoJugador) {
+            document.getElementById('info-jugador').innerHTML = `
+                <h2>${infoJugador.nombre}</h2>
+                <img src="${infoJugador.imagen}" alt="${infoJugador.main}" class="personaje-img">
+                <p><strong>Main:</strong> ${infoJugador.main}</p>
+                <p><strong>Mejores victorias:</strong> ${infoJugador.victorias.join(', ')}</p>
+                <p><strong>Mejor resultado en torneo:</strong> ${infoJugador.resultado.join(', ')}</p>
+            `;
         }
-    }
-
-    // Cargar resultados de Start.gg (esto requiere un API Key)
-    function cargarResultadosStartGG(urlStartGG) {
-        // Aquí implementarás la lógica para conectarte con la API de Start.gg
-        // usando su API y mostrar resultados del perfil del jugador.
-        console.log("Resultados de Start.gg de:", urlStartGG);
     }
 });
