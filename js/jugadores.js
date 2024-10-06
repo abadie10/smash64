@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const infoJugador = document.getElementById('info-jugador');
 
     // Cargar jugadores desde el archivo JSON
-    fetch('http://abadie10.github.io/smash64/jugadores.json')
+    fetch('https://abadie10.github.io/smash64/jugadores.json')
         .then(response => response.json())
         .then(jugadores => {
             jugadores.forEach(jugador => {
