@@ -93,6 +93,7 @@ nav ul {
     border: 1px solid #ccc;
     font-size: 18px;
     color: white;
+    cursor: pointer;  /* Esto hará que aparezca la mano al pasar el mouse */
 }
 
 .tabla-jugadores tr {
