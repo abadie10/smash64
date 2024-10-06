@@ -1,0 +1,18 @@
+[
+    {
+        "nombre": "Kaiser",
+        "main": "Capitan Falcon",
+        "imagen": "https://link-a-la-imagen-de-capitan-falcon",
+        "startgg": "https://www.start.gg/user/616facd9",
+        "mejores_victorias": ["Foca (4stock)", "Marce", "Roche"],
+        "mejor_resultado": ["4to", "2do (teams)"]
+    },
+    {
+        "nombre": "Alls",
+        "main": "Kirby",
+        "imagen": "https://link-a-la-imagen-de-kirby",
+        "startgg": "",
+        "mejores_victorias": ["Chapuz"],
+        "mejor_resultado": ["2to", "2do (teams)"]
+    }
+]
