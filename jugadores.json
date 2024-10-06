@@ -17,6 +17,31 @@
         "mejores_victorias": ["Chapuz, Marce, Sitio"],
         "mejor_resultado": ["2do", "2do (teams)"]
     },
+        "nombre": "Mati",
+        "main": "Ness",
+        "otros": ["Kirby"],
+        "imagen": "images/ness.jpg",
+        "startgg": "",
+        "mejores_victorias": [""],
+        "mejor_resultado": ["13vo"]
+    },
+    {
+        "nombre": "Max",
+        "main": "Kirby",
+        "otros": ["Pikachu, Capitan Falcon"],
+        "imagen": "images/kirby.jpg",
+        "startgg": "",
+        "mejores_victorias": ["CronoNess, Dunk"],
+        "mejor_resultado": ["9no"]
+    }, 
+    {
+        "nombre": "Negro",
+        "main": "DK,",
+        "otros": [""],
+        "imagen": "images/dk.jpg",
+        "startgg": "",
+        "mejores_victorias": ["Abuelo"],
+        "mejor_resultado": [""]
     {
         "nombre": "Ochoa",
         "main": "Pikachu,",
