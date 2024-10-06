@@ -26,16 +26,20 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => console.error('Error al cargar los jugadores:', error));
 
     // Función para mostrar la información del jugador
-    function mostrarInfoJugador(jugadorId, datosJugadores) {
-        const infoJugador = datosJugadores.find(jugador => jugador.nombre.toLowerCase() === jugadorId);
-        if (infoJugador) {
-            document.getElementById('info-jugador').innerHTML = `
-                <h2>${infoJugador.nombre}</h2>
-                <img src="${infoJugador.imagen}" alt="${infoJugador.main}" class="personaje-img">
-                <p><strong>Main:</strong> ${infoJugador.main}</p>
-                <p><strong>Mejores victorias:</strong> ${infoJugador.mejores_victorias.join(', ')}</p>
-                <p><strong>Mejor resultado en torneo:</strong> ${infoJugador.mejor_resultado.join(', ')}</p>
-            `;
-        }
+function mostrarInfoJugador(jugadorId, datosJugadores) {
+    const infoJugador = datosJugadores.find(jugador => jugador.nombre.toLowerCase() === jugadorId);
+    if (infoJugador) {
+        document.getElementById('info-jugador').innerHTML = `
+            <h2>${infoJugador.nombre}</h2>
+            <img src="${infoJugador.imagen}" alt="${infoJugador.main}" class="personaje-img">
+            <p><strong>Main:</strong> ${infoJugador.main}</p>
+            <p><strong>Mejores victorias:</strong> ${infoJugador.mejores_victorias.join(', ')}</p>
+            <p><strong>Mejor resultado en torneo:</strong> ${infoJugador.mejor_resultado.join(', ')}</p>
+            <a href="${infoJugador.startgg}" target="_blank">
+                <img src="images/startgg-icon.png" alt="Start.gg" width="30px">
+            </a>
+        `;
     }
+}
+
 });
