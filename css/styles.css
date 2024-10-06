@@ -81,27 +81,22 @@ nav ul {
     margin-top: 0; /* Elimina cualquier margen extra entre la barra y el menú */
 }
 
-.tabla-jugadores {
-    width: 100%;
+.tabla-jugadores, .tabla-info-jugador {
+    width: 100%; /* Asegura que ambas tablas ocupen el 100% del ancho disponible */
     border-collapse: collapse;
-    text-align: center;
-    margin: 20px 0;
 }
 
-.tabla-jugadores td {
+.tabla-jugadores td, .tabla-info-jugador td {
+    width: 33.33%; /* Cada celda ocupará un tercio del ancho de la tabla */
     padding: 10px;
     border: 1px solid #ccc;
-    font-size: 18px;
-    color: white;
-    cursor: pointer;
-    width: 33.33%;  /* Hace que cada celda ocupe un tercio del ancho de la tabla */
-    height: 50px;  /* Define una altura fija para todas las celdas */
-    box-sizing: border-box;  /* Asegura que el tamaño incluya padding y borde */
+    text-align: center;
 }
 
-.tabla-jugadores tr {
+.tabla-jugadores tr, .tabla-info-jugador tr {
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 
 
 .jugador-seleccionado {
@@ -110,18 +105,7 @@ nav ul {
     border-radius: 5px;
 }
 
-.tabla-info-jugador {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
 
-.tabla-info-jugador td {
-    padding: 10px;
-    border: 1px solid #ccc;
-    font-size: 18px;
-    vertical-align: middle;  /* Asegura que el texto se alinee correctamente */
-}
 
 .imagen-celda {
     text-align: center;
