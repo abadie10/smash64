@@ -93,12 +93,16 @@ nav ul {
     border: 1px solid #ccc;
     font-size: 18px;
     color: white;
-    cursor: pointer;  /* Esto hará que aparezca la mano al pasar el mouse */
+    cursor: pointer;
+    width: 33.33%;  /* Hace que cada celda ocupe un tercio del ancho de la tabla */
+    height: 100px;  /* Define una altura fija para todas las celdas */
+    box-sizing: border-box;  /* Asegura que el tamaño incluya padding y borde */
 }
 
 .tabla-jugadores tr {
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 
 .jugador-seleccionado {
     background-color: #1abc9c; /* Color de fondo cuando esté seleccionado */
