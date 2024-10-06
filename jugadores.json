@@ -20,7 +20,7 @@
         "main": "Pikachu",
         "imagen": "images/pikachu.jpg",
         "startgg": "https://www.start.gg/user/d70d285f",
-        "mejores_victorias": ["Abuelo"],
-        "mejor_resultado": ["2to", "2do (teams)"]
+        "mejores_victorias": ["Abuelo, Bob"],
+        "mejor_resultado": ["10mo"]
     }
 ]
