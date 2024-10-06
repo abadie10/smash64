@@ -103,6 +103,10 @@ nav ul {
     text-align: center;
 }
 
+.tabla-jugadores td {
+    cursor: pointer; /* Hace que el cursor se vea como una mano al pasar sobre las celdas */
+}
+
 .tabla-jugadores tr, .tabla-info-jugador tr {
     background-color: rgba(0, 0, 0, 0.7);
 }
