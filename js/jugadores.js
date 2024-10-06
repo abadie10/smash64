@@ -32,16 +32,13 @@ function mostrarInfoJugador(jugadorId, datosJugadores) {
         document.getElementById('info-jugador').innerHTML = `
             <table class="tabla-info-jugador">
                 <tr>
-                    <td rowspan="4">
+                    <td rowspan="5">
                         <img src="${infoJugador.imagen}" alt="${infoJugador.main}" class="personaje-img">
                     </td>
                     <td><strong>Nombre:</strong> ${infoJugador.nombre}</td>
                 </tr>
                 <tr>
                     <td><strong>Main:</strong> ${infoJugador.main}</td>
-                </tr>
-                 <tr>
-                    <td><strong>Otros Personajes:</strong> ${infoJugador.otros}</td>
                 </tr>
                 <tr>
                     <td><strong>Mejores victorias:</strong> ${infoJugador.mejores_victorias.join(', ')}</td>
@@ -50,9 +47,12 @@ function mostrarInfoJugador(jugadorId, datosJugadores) {
                     <td><strong>Mejor resultado en torneo:</strong> ${infoJugador.mejor_resultado.join(', ')}</td>
                 </tr>
                 <tr>
+                    <td><strong>Otros Personajes:</strong> ${infoJugador.otros.join(', ')}</td>
+                </tr>
+                <tr>
                     <td colspan="2">
                         <a href="${infoJugador.startgg}" target="_blank">
-                            <img src="images/startgg.png" alt="Start.gg" width="30px">
+                            <img src="images/startgg-icon.png" alt="Start.gg" width="30px">
                         </a>
                     </td>
                 </tr>
@@ -60,4 +60,5 @@ function mostrarInfoJugador(jugadorId, datosJugadores) {
         `;
     }
 }
+
 
