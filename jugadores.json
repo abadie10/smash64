@@ -21,7 +21,7 @@
         "nombre": "Mati",
         "main": "Ness",
         "otros": ["Kirby"],
-        "imagen": "images/ness.jpg",
+        "imagen": "images/ness.png",
         "startgg": "",
         "mejores_victorias": [""],
         "mejor_resultado": ["13vo"]
@@ -39,7 +39,7 @@
         "nombre": "Negro",
         "main": "DK,",
         "otros": [""],
-        "imagen": "images/dk.jpg",
+        "imagen": "images/dk.png",
         "startgg": "",
         "mejores_victorias": ["Abuelo"],
         "mejor_resultado": [""]
