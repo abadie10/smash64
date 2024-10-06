@@ -25,13 +25,15 @@ document.addEventListener('DOMContentLoaded', function () {
     // Función para mostrar la información del jugador
     function mostrarInfoJugador(jugador) {
         infoJugador.innerHTML = `
-            <h2>${jugador.nombre}</h2>
-            <img src="${jugador.imagen}" alt="${jugador.main} class="personaje-img">
-            <p><strong>Main:</strong> ${jugador.main}</p>
-            <p><strong>Mejores victorias:</strong> ${jugador.mejores_victorias.join(', ')}</p>
-            <p><strong>Mejores resultados en torneo:</strong> ${jugador.mejor_resultado.join(', ')}</p>
-            <a href="${jugador.startgg}" target="_blank">Ver perfil en Start.gg</a>
-        `;
+    <h2>${jugador.nombre}</h2>
+    <img src="${jugador.imagen}" alt="${jugador.main}" class="personaje-img">
+    <p><strong>Main:</strong> ${jugador.main}</p>
+    <p><strong>Mejores victorias:</strong> ${jugador.mejores_victorias.join(', ')}</p>
+    <p><strong>Mejores resultados en torneo:</strong> ${jugador.mejor_resultado.join(', ')}</p>
+    <a href="${jugador.startgg}" target="_blank">
+        <img src="images/startgg-icon.png" alt="Start.gg" width="30px">
+    </a>
+`;
         if (jugador.startgg) {
             cargarResultadosStartGG(jugador.startgg);
         }
