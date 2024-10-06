@@ -63,7 +63,7 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-.global-title .logo {
+header .global-title .logo {
     width: 50px; /* Ajusta el tamaño del logo */
     max-width: 50px !important;
     height: auto;
