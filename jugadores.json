@@ -2,6 +2,7 @@
     {
         "nombre": "Kaiser",
         "main": "Capitan Falcon",
+        "Otros": "Luigi, Fox",
         "imagen": "https://abadie10.github.io/smash64/images/falcon.jpg",
         "startgg": "https://www.start.gg/user/616facd9",
         "mejores_victorias": ["Foca (4stock)", "Marce", "Roche"],
@@ -10,6 +11,7 @@
     {
         "nombre": "Alls",
         "main": "Kirby",
+        "Otros": "Fox, Mario, Capitan Falcon",
         "imagen": "images/kirby.jpg",
         "startgg": "https://www.start.gg/user/0f1dc875",
         "mejores_victorias": ["Chapuz, Marce, Sitio"],
@@ -17,7 +19,8 @@
     },
     {
         "nombre": "Ochoa",
-        "main": "Pikachu",
+        "main": "Pikachu,",
+        "Otros": "Capitan Falcon",
         "imagen": "images/pikachu.jpg",
         "startgg": "https://www.start.gg/user/d70d285f",
         "mejores_victorias": ["Abuelo, Bob"],
