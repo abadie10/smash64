@@ -52,13 +52,23 @@ nav ul li a:hover {
 }
 
 .global-title {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
-    color: white; /* Texto blanco */
-    padding: 20px; /* Espacio alrededor del texto */
-    text-align: center; /* Centrar el texto */
-    font-size: 28px; /* Tamaño de la fuente */
-    font-weight: bold; /* Texto en negrita */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex; /* Usa flexbox para alinear la imagen y el texto */
+    align-items: center;
+    justify-content: center;
 }
+
+.global-title .logo {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-right: 15px; /* Añade espacio entre el logo y el título */
+}
+
 
 nav ul {
     margin-top: 0; /* Elimina cualquier margen extra entre la barra y el menú */
