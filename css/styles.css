@@ -109,3 +109,22 @@ nav ul {
     color: white;
     border-radius: 5px;
 }
+
+.tabla-info-jugador {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tabla-info-jugador td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+.personaje-img {
+    width: 150px; /* Ajusta el tamaño de la imagen según lo necesites */
+    height: auto;
+    display: block;
+}
+
