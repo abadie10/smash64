@@ -95,7 +95,7 @@ nav ul {
     color: white;
     cursor: pointer;
     width: 33.33%;  /* Hace que cada celda ocupe un tercio del ancho de la tabla */
-    height: 100px;  /* Define una altura fija para todas las celdas */
+    height: 50px;  /* Define una altura fija para todas las celdas */
     box-sizing: border-box;  /* Asegura que el tamaño incluya padding y borde */
 }
 
