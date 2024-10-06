@@ -50,3 +50,16 @@ nav ul li a:hover {
     height: auto; /* Mantiene las proporciones correctas */
     border-radius: 10px; /* Opcional: añade bordes redondeados */
 }
+
+.global-title {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espacio alrededor del texto */
+    text-align: center; /* Centrar el texto */
+    font-size: 28px; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+}
+
+nav ul {
+    margin-top: 0; /* Elimina cualquier margen extra entre la barra y el menú */
+}
