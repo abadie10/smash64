@@ -17,6 +17,7 @@
         "mejores_victorias": ["Chapuz, Marce, Sitio"],
         "mejor_resultado": ["2do", "2do (teams)"]
     },
+    {
         "nombre": "Mati",
         "main": "Ness",
         "otros": ["Kirby"],
@@ -42,6 +43,7 @@
         "startgg": "",
         "mejores_victorias": ["Abuelo"],
         "mejor_resultado": [""]
+    },
     {
         "nombre": "Ochoa",
         "main": "Pikachu,",
