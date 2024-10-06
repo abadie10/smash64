@@ -36,7 +36,7 @@ function mostrarInfoJugador(jugadorId, datosJugadores) {
             <p><strong>Mejores victorias:</strong> ${infoJugador.mejores_victorias.join(', ')}</p>
             <p><strong>Mejor resultado en torneo:</strong> ${infoJugador.mejor_resultado.join(', ')}</p>
             <a href="${infoJugador.startgg}" target="_blank">
-                <img src="images/startgg-icon.png" alt="Start.gg" width="30px">
+                <img src="images/startgg.png" alt=Start.gg" width="30px">
             </a>
         `;
     }
