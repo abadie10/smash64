@@ -2,7 +2,7 @@
     {
         "nombre": "Kaiser",
         "main": "Capitan Falcon",
-        "imagen": "images/falcon.jpg",
+        "imagen": "https://abadie10.github.io/smash64/images/falcon.jpg",
         "startgg": "https://www.start.gg/user/616facd9",
         "mejores_victorias": ["Foca (4stock)", "Marce", "Roche"],
         "mejor_resultado": ["4to", "2do (teams)"]
