@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <p><strong>Mejores victorias:</strong> ${jugador.mejores_victorias.join(', ')}</p>
     <p><strong>Mejores resultados en torneo:</strong> ${jugador.mejor_resultado.join(', ')}</p>
     <a href="${jugador.startgg}" target="_blank">
-        <img src="images/startgg-icon.png" alt="Start.gg" width="30px">
+        <img src="https://abadie10.github.io/smash64/images/startgg.png" alt="Start.gg" width="30px">
     </a>
 `;
         if (jugador.startgg) {
