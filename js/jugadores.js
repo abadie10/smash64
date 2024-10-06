@@ -26,40 +26,45 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => console.error('Error al cargar los jugadores:', error));
 
     // Función para mostrar la información del jugador
-    function mostrarInfoJugador(jugadorId, datosJugadores) {
-        const infoJugador = datosJugadores.find(jugador => jugador.nombre.toLowerCase() === jugadorId);
-        if (infoJugador) {
-            document.getElementById('info-jugador').innerHTML = `
-                <table class="tabla-info-jugador">
-                    <tr>
-                        <td rowspan="5">
-                            <img src="${infoJugador.imagen}" alt="${infoJugador.main}" class="personaje-img">
-                        </td>
-                        <td><strong>Nombre:</strong> ${infoJugador.nombre}</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Main:</strong> ${infoJugador.main}</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Mejores victorias:</strong> ${infoJugador.mejores_victorias.join(', ')}</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Mejor resultado en torneo:</strong> ${infoJugador.mejor_resultado.join(', ')}</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Otros Personajes:</strong> ${infoJugador.otros.join(', ')}</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <a href="${infoJugador.startgg}" target="_blank">
-                                <img src="images/startgg.png" alt="Start.gg" width="30px">
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            `;
-        }
+function mostrarInfoJugador(jugadorId, datosJugadores) {
+    const infoJugador = datosJugadores.find(jugador => jugador.nombre.toLowerCase() === jugadorId);
+    if (infoJugador) {
+        document.getElementById('info-jugador').innerHTML = `
+            <table class="tabla-info-jugador">
+                <tr>
+                    <td rowspan="5" class="imagen-celda">
+                        <img src="${infoJugador.imagen}" alt="${infoJugador.main}" class="personaje-img">
+                    </td>
+                    <td><strong>Nombre</strong></td>
+                    <td>${infoJugador.nombre}</td>
+                </tr>
+                <tr>
+                    <td><strong>Main</strong></td>
+                    <td>${infoJugador.main}</td>
+                </tr>
+                <tr>
+                    <td><strong>Mejores victorias</strong></td>
+                    <td>${infoJugador.mejores_victorias ? infoJugador.mejores_victorias.join(', ') : 'N/A'}</td>
+                </tr>
+                <tr>
+                    <td><strong>Mejor resultado</strong></td>
+                    <td>${infoJugador.mejor_resultado ? infoJugador.mejor_resultado.join(', ') : 'N/A'}</td>
+                </tr>
+                <tr>
+                    <td><strong>Otros Personajes</strong></td>
+                    <td>${infoJugador.otros ? infoJugador.otros.join(', ') : 'N/A'}</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <a href="${infoJugador.startgg}" target="_blank">
+                            <img src="images/startgg.png" alt="Start.gg" width="30px">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        `;
     }
+}
 });
 
 
