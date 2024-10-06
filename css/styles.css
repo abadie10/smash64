@@ -86,8 +86,18 @@ nav ul {
     border-collapse: collapse;
 }
 
+.tabla-jugadores {
+    width: 100%;
+    margin-bottom: 20px; /* Añade espacio debajo de la tabla de jugadores */
+}
+
+.tabla-info-jugador {
+    width: 100%;
+    margin-top: 20px; /* Añade espacio encima de la tabla de información */
+}
+
 .tabla-jugadores td, .tabla-info-jugador td {
-    width: 33.33%; /* Cada celda ocupará un tercio del ancho de la tabla */
+    width: 33.33%; /* Asegura el mismo ancho para las celdas */
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
@@ -96,7 +106,6 @@ nav ul {
 .tabla-jugadores tr, .tabla-info-jugador tr {
     background-color: rgba(0, 0, 0, 0.7);
 }
-
 
 
 .jugador-seleccionado {
