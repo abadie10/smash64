@@ -2,9 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('background.png');
-    background-size: cover;
-    background-position: center;
+    min-height: 100vh;  /* Asegura que el cuerpo tenga altura suficiente */
+    background-image: url('images/background.png');
+    background-size: cover;  /* Ajusta la imagen para cubrir el fondo */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat;  /* No repite la imagen */
     color: white;
     text-align: center;
 }
@@ -15,7 +17,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);  /* Fondo semi-transparente para el menú */
 }
 
 nav ul li {
@@ -35,9 +37,10 @@ nav ul li a:hover {
 }
 
 .content-container {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7);  /* Fondo semi-transparente */
     padding: 20px;
     max-width: 800px;
     margin: 50px auto;
     border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);  /* Añade una sombra */
 }
