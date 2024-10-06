@@ -46,7 +46,7 @@ nav ul li a:hover {
 }
 
 .personaje-img {
-    width: 150px; /* Ajusta el tamaño de la imagen a 150px de ancho */
+    width: 50px; /* Ajusta el tamaño de la imagen a 150px de ancho */
     height: auto; /* Mantiene las proporciones correctas */
     border-radius: 10px; /* Opcional: añade bordes redondeados */
 }
